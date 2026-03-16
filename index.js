@@ -18,9 +18,22 @@ return str.split("").reverse().join("");}
  * @returns {number} The largest number in the array. Return null if the array is empty.
  */
 function findLargest(numbers) {
-    if (numbers.length === 0) return null;
-    return Math.max(numbers);
-}
+   function findLargest(numbers) {
+  if (numbers.length === 0) {
+    return null;
+  }
+
+  let largest = numbers[0];
+
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] > largest) {
+      largest = numbers[i];
+    }
+  }
+
+  return largest;
+} 
+   }
 
 /**
  * @param {string} str The string to check.
