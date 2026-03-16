@@ -17,7 +17,6 @@ return str.split("").reverse().join("");}
  * @param {number[]} numbers An array of numbers.
  * @returns {number} The largest number in the array. Return null if the array is empty.
  */
-function findLargest(numbers) {
    function findLargest(numbers) {
   if (numbers.length === 0) {
     return null;
@@ -33,7 +32,7 @@ function findLargest(numbers) {
 
   return largest;
 } 
-   }
+   
 
 /**
  * @param {string} str The string to check.
